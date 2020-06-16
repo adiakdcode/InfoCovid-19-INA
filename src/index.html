@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></link>
+    <title>SICOVID-19 :: Si Corona :(</title>
+</head>
+<body>
+<header>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container">
+    <a class="navbar-brand" href="#">SICOV19
+    </a>
+    
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Data Kasus
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#nasional">Data Nasional</a>
+                <a class="dropdown-item" href="#data-prov">Data Provinsi</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="https://covid19.go.id">Laman Resmi COVID-19</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About COVID-19
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#content-covid">Apa itu COVID-19 ?</a>
+                <a class="dropdown-item" href="#">Cara Penularan</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Cara Mencegah</a>
+              </div>
+            </li>
+          </ul>
+    
+      </div>
+    </nav>
+  </div>
+</header>
+<main>
+    <div class="banner">
+        <img src="src/image/covid1-bg.png" width="50";>
+    </div>
+    <div id="headline">>> Perkembangan kasus COVID-19 di Indonesia <<< </div>
+    <div id="nasional"class="row">
+        <div class="column">
+          <div class="cardcov">
+            <h3>KASUS +</h3>
+            <div id="total_kasus"></div>
+            <p>Jumlah Akumulasi Kasus +</p>
+          </div>
+        </div>
+        <div class="column">
+            <div class="cardcov-sembuh">
+              <h3>SEMBUH</h3>
+              <div id="sembuh"></div>
+              <p>Jumlah Akumulasi Sembuh</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="cardcov-rawat">
+              <h3>DIRAWAT</h3>
+              <div id="perawatan"></div>
+              <p>Dalam Perawatan</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="cardcov-mati">
+              <h3>MENINGGAL</h3>
+              <div id="meninggal"></div>
+              <p>Jumlah Akumulasi meninggal</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row mb-5">
+              
+            </div>
+          </div>
+        <div class="container">
+          <div id="headline">>> Perkembangan kasus COVID-19 di Indonesia berdasarkan Provinsi <<< </div>
+          <div class="row" id="data-prov">
+            <div class="col-sm-3">
+              <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                <div class="card-header text-center">No Internet Connection >>Loading ...</div>
+                <div class="card-body">
+                  <p class="card-text">Positif : </p>
+                  <hr>
+                  <p class="card-text">Sembuh : </p>
+                  <hr>
+                  <p class="card-text">Meninggal : </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                <div class="card-header text-center">No Internet Connection >>Loading ...</div>
+                <div class="card-body">
+                  <p class="card-text">Positif : </p>
+                  <hr>
+                  <p class="card-text">Sembuh : </p>
+                  <hr>
+                  <p class="card-text">Meninggal : </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                <div class="card-header text-center">No Internet Connection >>Loading ...</div>
+                <div class="card-body">
+                  <p class="card-text">Positif : </p>
+                  <hr>
+                  <p class="card-text">Sembuh : </p>
+                  <hr>
+                  <p class="card-text">Meninggal : </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                <div class="card-header text-center">No internet Connection >>Loading ...</div>
+                <div class="card-body">
+                  <p class="card-text">Positif : </p>
+                  <hr>
+                  <p class="card-text">Sembuh : </p>
+                  <hr>
+                  <p class="card-text">Meninggal : </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+
+            <content-covid></content-covid>
+            
+    </div>
+
+        
+                
+</main>
+<foot-bar></foot-bar>
+<!--Bootstrap-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="src/script/data/data-source.js"></script>
+
+</body>
+</html>
