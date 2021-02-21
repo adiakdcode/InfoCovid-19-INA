@@ -4,4 +4,4 @@ Project Info kasus covid19 di Indonesia
 4. untuk menjalankan program ketikkan :
    npm install >> pada terminal
 5. lalu ketik :
-   npn run start-dev >>
+   npm run start-dev >>
